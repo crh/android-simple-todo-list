@@ -32,12 +32,10 @@ public class TodoListActivity extends Activity {
       @Override
       public boolean onKey(View arg0, int keyCode, KeyEvent event) {
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
-          if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
-            toDoList.add(0, editText.getText().toString());
-            adapter.notifyDataSetChanged();
-            editText.setText("");
-            return true;
-          }
+          toDoList.add(editText.getText().toString());
+          adapter.notifyDataSetChanged();
+          editText.setText("");
+          return true;
         }
         return false;
       }
