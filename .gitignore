@@ -1,0 +1,14 @@
+*.o
+build/**/*
+.DS_Store
+*.app
+*.swp
+*~.nib
+build/*
+target
+target/*
+classes/*
+bin/*
+log/*
+reports/*
+*.log
